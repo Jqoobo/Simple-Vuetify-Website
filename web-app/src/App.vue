@@ -3,31 +3,30 @@
     <Header/>
     <v-main>
       <HeroComponent/>
+      <onas/>
+      <Portfolio/>
+      <project/>
+      <Gallery/>
+      <Contact/>
+      <Footer/>
     </v-main>
   </v-app>
 </template>
 
 <script>
 
-import Header from './components/header.vue';
 import HeroComponent from './components/HeroComponent.vue';
+import Onas from './components/Onas.vue';
+import Portfolio from './components/Portfolio.vue';
+import Project from './components/Project.vue';
+import Gallery from './components/Gallery.vue';
+import Contact from './components/Contact.vue';
+import Footer from './components/Footer.vue';
+import Header from './components/header.vue';
+
 export default {
   name: 'App',
-  components: { HeroComponent, Header},
-  data(){
-   return{
-    menus:[
-      {title:'Strona Główna',   route:'glowna'},
-      {title:'O nas',           route:'o-nas'},
-      {title:'Portfolio',       route:'portfolio'},
-      {title:'Projekty',        route:'projekt'},
-      {title:'Galeria',         route:'galeria'},
-      {title:'Kontakt',         route:'kontakt'},
-    ]
-   }
-  }
-  
-
+  components: { HeroComponent, Onas, Portfolio, Project, Gallery, Contact, Footer, Header },
   
 };
 </script>
