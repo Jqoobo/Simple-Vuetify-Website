@@ -7,10 +7,10 @@
       elevation="6"
       elevate-on-scroll
     >
-    <v-toolbar-title>Vuetify APP</v-toolbar-title>
+    <v-toolbar-title>Odkryj Polskę.pl</v-toolbar-title>
     <v-spacer/>
     <v-list class="d-flex align-center">
-      <v-list-item link v-for="(menu,index) in menus" :key="index" :to="menu.route">
+      <v-list-item link v-for="(menu,index) in menus" :key="index" to="menu.route">
         <v-list-title>{{menu.title}}</v-list-title>
       </v-list-item>
       <v-btn text> 
@@ -29,7 +29,7 @@ export default {
   data(){
    return{
     menus:[
-      {title:'Home',            router:'glowna', link:'App.vue'},
+      {title:'Home',            route:'glowna'},
       {title:'O nas',           route:'o-nas'},
       {title:'Portfolio',       route:'portfolio'},
       {title:'Projekty',        route:'projekt'},
@@ -37,7 +37,7 @@ export default {
       {title:'Kontakt',         route:'kontakt'},
     ]
    }
-  }
+  },
   
 };
 </script>

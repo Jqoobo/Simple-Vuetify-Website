@@ -3,11 +3,11 @@
     <Header/>
     <v-main>
       <HeroComponent/>
-      <onas/>
+      <Onas/>
       <Portfolio/>
-      <project/>
       <Gallery/>
-      <Contact/>
+      <Weather/>
+      <Contact/>   
       <Footer/>
     </v-main>
   </v-app>
@@ -16,17 +16,18 @@
 <script>
 
 import HeroComponent from './components/HeroComponent.vue';
-import Onas from './components/Onas.vue';
-import Portfolio from './components/Portfolio.vue';
-import Project from './components/Project.vue';
-import Gallery from './components/Gallery.vue';
 import Contact from './components/Contact.vue';
 import Footer from './components/Footer.vue';
 import Header from './components/header.vue';
+import Weather from './components/Weather.vue';
+import Portfolio from './components/Portfolio.vue';
+import Gallery from './components/Gallery.vue';
+import Onas from './components/Onas.vue';
+
 
 export default {
   name: 'App',
-  components: { HeroComponent, Onas, Portfolio, Project, Gallery, Contact, Footer, Header },
+  components: { HeroComponent, Contact, Footer, Header, Weather, Portfolio, Gallery, Onas },
   
 };
 </script>
