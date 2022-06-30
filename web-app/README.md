@@ -1,4 +1,4 @@
-# web-app
+# Vue.js 2 + Vuetify Website
 
 ## Project setup
 ```
