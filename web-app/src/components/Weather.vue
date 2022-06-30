@@ -5,8 +5,15 @@
       <div class="search-box">
         <input 
           type="text" 
-          class="search-bar" 
-          placeholder="Wyszukaj"
+          class="search-bar d-none d-sm-flex" 
+          placeholder="Wyszukaj Miasto"
+          v-model="query"
+          @keypress="fetchWeather"
+        />
+        <input 
+          type="text" 
+          class="search-bar-mobile d-flex d-sm-none" 
+          placeholder="Wyszukaj Miasto"
           v-model="query"
           @keypress="fetchWeather"
         />
@@ -87,6 +94,24 @@ transition: 0.3s;
 main {
   min-height: 42vh;
   padding: 25px;
+  
+}
+.search-bar-mobile{
+ display: block;
+  width: 145%;
+  padding: 15px;
+  margin-left:-25px;
+  
+  color: #313131;
+  font-size: 20px;
+  appearance: none;
+  border:none;
+  outline: none;
+  background: none;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  border-radius: 0px 16px 0px 16px;
+  transition: 0.4s;
   
 }
 .search-box {

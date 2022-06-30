@@ -9,7 +9,7 @@
                 <v-subheader class="textmain d-none d-sm-flex">O nas!</v-subheader>
                 <v-subheader class="textmain d-flex d-sm-none justify-center">O nas!</v-subheader>
                 <br>
-                <p class="p black--text">Jesteśmy dwoma studentami Wyższej Szkoły Informatyki i Zarządzania w Rzeszowie. Stworzyliśmy tę stonę dla osób, które potrzebują codziennej dawki informacji na temat Naszego kraju - Polski. Nasz świat pomimo tak ogrmomnego kilometrarza, zawiera jednak stosunkowo niewiele tak pięknych miejsc jak Polska - tam, gdzie z wysokich gór można udac się nad Morze Bałtyckie i doznać tamtejszej bryzy. <br>Na naszej stronie:</p>
+                <p class="p black--text">Jesteśmy dwójką studentów Wyższej Szkoły Informatyki i Zarządzania w Rzeszowie. Stworzyliśmy tę stonę dla osób, które potrzebują codziennej dawki informacji na temat Naszego kraju - Polski. Nasz świat pomimo tak ogrmomnego kilometrarza, zawiera jednak stosunkowo niewiele tak pięknych miejsc jak Polska - tam, gdzie z wysokich gór można udac się nad Morze Bałtyckie i doznać tamtejszej bryzy. <br>Na naszej stronie:</p>
 
             <v-list>
                 <v-list-item>

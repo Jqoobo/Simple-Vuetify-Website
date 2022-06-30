@@ -12,12 +12,12 @@
     <img class="img d-none d-sm-flex"  src="https://media.discordapp.net/attachments/808637296286892082/992003976872607845/logo_black.png?width=905&height=905"/>
     <v-toolbar-title  class="logo_title mx-2 d-none d-sm-flex">ODKRYWAJ.pl </v-toolbar-title>
     <img class="img2 d-flex d-sm-none"  src="https://media.discordapp.net/attachments/808637296286892082/992003976872607845/logo_black.png?width=905&height=905"/>
-    <v-toolbar-title class="mx-2 mr-15 pr-15 d-flex d-sm-none">ODKRYWAJ.pl</v-toolbar-title>
+    <v-toolbar-title class=" logo_title mx-2 mr-15 pr-15 d-flex d-sm-none">ODKRYWAJ.pl</v-toolbar-title>
     <v-spacer/>
     <v-list class="align-center d-none d-sm-flex d-sm-none d-md-flex">
          <v-btn outlined color="black" class="mx-2" href="#/home">Home</v-btn>
          <v-btn outlined color="black" class="mx-2" href="#/onas">O nas</v-btn>
-         <v-btn outlined color="black" class="mx-2" href="#/portfolio">Portfolio</v-btn>
+         <v-btn outlined color="black" class="mx-2" href="#/portfolio">Przewodnik</v-btn>
          <v-btn outlined color="black" class="mx-2" href="#/gallery">Galeria</v-btn>
          <v-btn outlined color="black" class="mx-2" href="#/weather">Pogoda</v-btn>
       </v-list>

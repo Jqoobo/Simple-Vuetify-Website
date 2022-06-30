@@ -30,7 +30,7 @@
         </v-btn>
         </v-row>
       </v-card-text>
-      <v-subheader class="mt-3 justify-center">Zapisz się do Newsletter'a już teraz!</v-subheader>
+      <v-subheader class="mt-3 justify-center black--text">Zapisz się do Newsletter'a już teraz!</v-subheader>
       <v-form class="mt-4">
         <v-text-field label="Wpisz Email" outlined dense required />
         <v-btn rounded class="white--text"  color="teal lighten-1">Zasubskrybuj</v-btn>
