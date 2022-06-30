@@ -2,20 +2,20 @@
 <v-container class="my-15">
     <v-row justify="center">
         <v-col lg="12" class="text-center ">
-            <v-subheader class="text-h4 justify-center 	d-none d-sm-flex">Portfolio</v-subheader>
-            <v-subheader class="text-h4 justify-center 	d-flex d-sm-none">Portfolio</v-subheader>
-            <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+            <v-subheader class="text-h4 justify-center 	d-none d-sm-flex black--text">Portfolio</v-subheader>
+            <v-subheader class="text-h4 justify-center 	d-flex d-sm-none black--text">Portfolio</v-subheader>
+            <p class="black--text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
         </v-col>
         <v-col lg="12">
             <div class="justify-center mt-5 d-none d-sm-flex ">
-                <v-chip @click="activePortfolio = 'webapp'" :color="activePortfolio === 'webapp'? 'cyan':''" class="mx-5 ">Web App</v-chip>
-                <v-chip @click="activePortfolio = 'mobileapp'" :color="activePortfolio === 'mobileapp'? 'cyan':''" class="mx-5">Mobile App</v-chip>
-                <v-chip @click="activePortfolio = 'desktopapp'" :color="activePortfolio === 'desktopapp'? 'cyan':''" class="mx-5">Desktop App</v-chip>
+                <v-chip @click="activePortfolio = 'webapp'" :color="activePortfolio === 'webapp'? 'teal accent-4':''" class="mx-5 ">Web App</v-chip>
+                <v-chip @click="activePortfolio = 'mobileapp'" :color="activePortfolio === 'mobileapp'? 'teal accent-4':''" class="mx-5">Mobile App</v-chip>
+                <v-chip @click="activePortfolio = 'desktopapp'" :color="activePortfolio === 'desktopapp'? 'teal accent-4':''" class="mx-5">Desktop App</v-chip>
             </div>
             <div class="justify-center mt-5 d-flex d-sm-none">
-                <v-chip @click="activePortfolio = 'webapp'" :color="activePortfolio === 'webapp'? 'cyan':''" class="mx-5 ">Web App</v-chip>
-                <v-chip @click="activePortfolio = 'mobileapp'" :color="activePortfolio === 'mobileapp'? 'cyan':''" class="mx-5">Mobile App</v-chip>
-                <v-chip @click="activePortfolio = 'desktopapp'" :color="activePortfolio === 'desktopapp'? 'cyan':''" class="mx-5">Desktop App</v-chip>
+                <v-chip @click="activePortfolio = 'webapp'" :color="activePortfolio === 'webapp'? 'teal accent-4':''" class="mx-5 black--text font-weight-bold">Web App</v-chip>
+                <v-chip @click="activePortfolio = 'mobileapp'" :color="activePortfolio === 'mobileapp'? 'teal accent-4':''" class="mx-5 black--text font-weight-bold">Mobile App</v-chip>
+                <v-chip @click="activePortfolio = 'desktopapp'" :color="activePortfolio === 'desktopapp'? 'teal accent-4':''" class="mx-5 black--text font-weight-bold">Desktop App</v-chip>
             </div>
         </v-col>
         <slot v-if="activePortfolio === 'webapp'">

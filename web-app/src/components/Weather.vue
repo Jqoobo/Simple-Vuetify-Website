@@ -75,14 +75,14 @@ body {
   font-family: 'montserrat', sans-serif;
 }
 #weather{
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 36%, rgba(0,125,255,1) 100%);
-  transition: 0.7s;
+background: rgb(0,24,36);
+background: linear-gradient(90deg, rgba(0,24,36,1) 0%, rgba(9,121,120,1) 36%, rgba(0,211,255,1) 100%);
+transition: 0.3s;
 }
 #weather.warm {
-  background: rgb(195,123,34);
-  background: linear-gradient(0deg, rgba(195,123,34,1) 43%, rgba(253,212,45,0.969625350140056) 100%);
-  transition: 0.7s;
+background: rgb(0,24,36);
+background: linear-gradient(90deg, rgba(0,24,36,1) 0%, rgba(9,121,58,1) 35%, rgba(0,255,154,1) 100%);
+transition: 0.3s;
 }
 main {
   min-height: 42vh;
@@ -107,7 +107,7 @@ main {
   outline: none;
   background: none;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: white;
   border-radius: 0px 16px 0px 16px;
   transition: 0.4s;
 }

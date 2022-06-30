@@ -2,10 +2,10 @@
   <v-container class="my-15">
     <v-row justify="center">
         <v-col lg="12" class="text-center ">
-            <v-subheader class="text-h4 justify-center d-none d-sm-flex ">Gallery</v-subheader>
-            <p class=" justify-center d-none d-sm-flex">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-            <v-subheader class="text-h4 justify-center d-flex d-sm-none">Gallery</v-subheader>
-            <p class="text-center d-flex d-sm-none">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+            <v-subheader class="text-h4 justify-center d-none d-sm-flex black--text ">Gallery</v-subheader>
+            <p class=" justify-center d-none d-sm-flex black--text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+            <v-subheader class="text-h4 justify-center d-flex d-sm-none black--text">Gallery</v-subheader>
+            <p class="text-center d-flex d-sm-none black--text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
         </v-col>     
         
     <v-col

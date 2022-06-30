@@ -3,7 +3,7 @@
     <v-col lg="12">
         <v-row justify="center">
            <v-col lg="4" class="text-center">
-            <v-toolbar-title>Odkryj Polskę</v-toolbar-title>
+            <v-toolbar-title class="logo_title">ODKRYWAJ.pl</v-toolbar-title>
             <v-card-text class="">
         <v-row justify="center" class="ml-3 mt-2">
           <h3 class="h3_profile">Kuba</h3>
@@ -30,7 +30,7 @@
         </v-btn>
         </v-row>
       </v-card-text>
-      <v-subheader>Zapisz się do Newsletter'a już teraz!</v-subheader>
+      <v-subheader class="mt-3 justify-center">Zapisz się do Newsletter'a już teraz!</v-subheader>
       <v-form class="mt-4">
         <v-text-field label="Wpisz Email" outlined dense required />
         <v-btn rounded class="white--text"  color="teal lighten-1">Zasubskrybuj</v-btn>
@@ -60,5 +60,11 @@ export default {
 .h3_profile{
   padding-top:7px;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.logo_title{
+font-family: 'Segoe UI';
+font-weight: 800;
+ }
 
 </style>

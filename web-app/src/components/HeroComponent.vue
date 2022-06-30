@@ -1,6 +1,7 @@
 <template>
     <v-container class="pt-15">
         <v-row>
+            <img class="hero d-flex d-sm-none ml-5" src="https://a.allegroimg.com/original/116527/c2a389954a7c8524835cad1eb9ab%22/%3E"/>
             <v-col lg="6">
                <h2 class="intro-text text-left d-none d-sm-flex">Poznaj Polskę!</h2>
                <h2 class="intro-text text-center ml-15 pl-5 d-flex d-sm-none">Poznaj Polskę!</h2> <br><br>
@@ -12,7 +13,7 @@
                </v-btn>
             </v-col>
             <v-col lg="6" class="d-none d-sm-flex">
-                <img class="hero" src="https://a.allegroimg.com/original/116527/c2a389954a7c8524835cad1eb9ab%22/%3E"/>
+                <img class="hero d-none d-sm-flex" src="https://a.allegroimg.com/original/116527/c2a389954a7c8524835cad1eb9ab%22/%3E"/>
             </v-col>
         </v-row>
         
