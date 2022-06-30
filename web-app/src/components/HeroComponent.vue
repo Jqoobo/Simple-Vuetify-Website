@@ -36,7 +36,7 @@ h2.intro-text{
 }
 
 p.opis{
-    font-size: 21px;
+    font-size: 16px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: justify;
     margin: 32 px 0px;

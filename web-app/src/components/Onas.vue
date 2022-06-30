@@ -2,25 +2,35 @@
     <v-container class="pt-15">
         <v-row>
             <v-col lg="6">
-                <img src="./../assets/car.jpg" alt="car">
+                <img src="https://cdn.discordapp.com/attachments/808637296286892082/992154302204366858/62083-journey-route-planning.gif" alt="car" width="500" height="500">
             </v-col>
             <v-col lg="6">
-                <v-subheader class="text-h4">O nas</v-subheader>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <v-subheader class="textmain">O nas!</v-subheader>
+                <br>
+                <p class="p">Jesteśmy dwoma studentami Wyższej Szkoły Informatyki i Zarządzania w Rzeszowie. Stworzyliśmy tę stonę dla osób, które potrzebują codziennej dawki informacji na temat Naszego kraju - Polski. Nasz świat pomimo tak ogrmomnego kilometrarza, zawiera jednak stosunkowo niewiele tak pięknych miejsc jak Polska - tam, gdzie z wysokich gór można udac się nad Morze Bałtyckie i doznać tamtejszej bryzy. <br>Na naszej stronie:</p>
             <v-list>
                 <v-list-item>
+                    <br><br>
                     <v-icon color="cyan" class="mr-3">mdi-check-all</v-icon>
-                    <v-list-item-subtitle>Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</v-list-item-subtitle>
+                    <v-list-item-subtitle>Jako obcokrajowiec możesz eksplorować naszą <br>
+                        stronę w poszukiwaniu informacji,na temat naszych pięknych miast,<br>
+                        bo wtedy odkryjesz nowe miejsca, które zwiedzisz, i doznasz <br>
+                        wspaniałych widoków i emocji!</v-list-item-subtitle>
                 </v-list-item>
+                <br>
                 <v-list-item>
                     <v-icon color="cyan" class="mr-3">mdi-check-all</v-icon>
-                    <v-list-item-subtitle>Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</v-list-item-subtitle>
+                    <v-list-item-subtitle>Jako mieszkaniec naszego kraju,<br>
+                        możesz sprawdzić stan pogody dla danego miasta,<br>
+                        bo wtedy możesz odpowiednio przygotować się do wyjścia na zewnatrz!</v-list-item-subtitle>
                 </v-list-item>
+                <br>
                 <v-list-item>
                     <v-icon color="cyan" class="mr-3">mdi-check-all</v-icon>
-                    <v-list-item-subtitle>Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</v-list-item-subtitle>
+                    <v-list-item-subtitle>Jako artysta,<br>
+                     możesz przejżeć galerię z największych miast w Poslce,<br>
+                     bo wtedy możesz złapać nowe inspiracje!</v-list-item-subtitle>
                 </v-list-item>
-                <p>Lorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolor</p>
             </v-list>
             </v-col>
         </v-row>
@@ -35,4 +45,13 @@ export default {
 
 <style scoped>
 
+.textmain
+{font-size: 60px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#444}
+    
+    .p{
+        color: #444444ba;
+    }
 </style>

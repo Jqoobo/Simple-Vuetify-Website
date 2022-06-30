@@ -7,7 +7,7 @@
       elevation="6"
       elevate-on-scroll
     >
-    <v-toolbar-title>Odkryj Polskę.pl</v-toolbar-title>
+    <v-toolbar-title>Odkrywaj.pl</v-toolbar-title>
     <v-spacer/>
     <v-list class="d-flex align-center">
       <v-list-item link v-for="(menu,index) in menus" :key="index" to="menu.route">

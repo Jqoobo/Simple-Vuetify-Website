@@ -9,8 +9,10 @@
       elevate-on-scroll
       class="d-flex justify-center"
     >
-    <img class="img d-none d-sm-flex" src="https://media.discordapp.net/attachments/808637296286892082/992003976872607845/logo_black.png?width=905&height=905"/><v-toolbar-title class="mx-2 d-none d-sm-flex">Odkryj Polskę.pl</v-toolbar-title>
-    <img class="img2 d-flex d-sm-none" src="https://media.discordapp.net/attachments/808637296286892082/992003976872607845/logo_black.png?width=905&height=905"/><v-toolbar-title class="mx-2 mr-15 pr-15 d-flex d-sm-none">Odkryj Polskę.pl</v-toolbar-title>
+    <img class="img d-none d-sm-flex"  src="https://media.discordapp.net/attachments/808637296286892082/992003976872607845/logo_black.png?width=905&height=905"/>
+    <v-toolbar-title  class="logo_title mx-2 d-none d-sm-flex">ODKRYWAJ.pl </v-toolbar-title>
+    <img class="img2 d-flex d-sm-none"  src="https://media.discordapp.net/attachments/808637296286892082/992003976872607845/logo_black.png?width=905&height=905"/>
+    <v-toolbar-title class="mx-2 mr-15 pr-15 d-flex d-sm-none">Odrywaj.pl</v-toolbar-title>
     <v-spacer/>
     <v-list class="align-center d-none d-sm-flex d-sm-none d-md-flex">
          <v-btn outlined color="black" class="mx-2" href="#/home">Home</v-btn>
@@ -104,9 +106,17 @@ export default {
 <style scoped>
 .img{
 width: 3%;
+font-family: "";
 }
 
 .img2{
   width: 12%;
   }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+  .logo_title
+ {
+font-family: 'Segoe UI';
+font-weight: 800;
+ }
+
 </style>
