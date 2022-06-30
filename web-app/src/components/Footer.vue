@@ -43,7 +43,7 @@
             <v-subheader>
                 Strona stworzona przy pomocy Vue oraz Vuetify
             <v-spacer />
-            <strong>Designed by Kuba & Kamila</strong>
+            <strong class="d-none d-sm-flex">Designed by Kuba & Kamila</strong>
             </v-subheader>
            </div>
     </v-col>
