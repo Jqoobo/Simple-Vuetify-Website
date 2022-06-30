@@ -8,6 +8,7 @@
                 <v-subheader class="textmain">O nas!</v-subheader>
                 <br>
                 <p class="p">Jesteśmy dwoma studentami Wyższej Szkoły Informatyki i Zarządzania w Rzeszowie. Stworzyliśmy tę stonę dla osób, które potrzebują codziennej dawki informacji na temat Naszego kraju - Polski. Nasz świat pomimo tak ogrmomnego kilometrarza, zawiera jednak stosunkowo niewiele tak pięknych miejsc jak Polska - tam, gdzie z wysokich gór można udac się nad Morze Bałtyckie i doznać tamtejszej bryzy. <br>Na naszej stronie:</p>
+
             <v-list>
                 <v-list-item>
                     <br><br>
