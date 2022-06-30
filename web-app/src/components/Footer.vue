@@ -3,23 +3,37 @@
     <v-col lg="12">
         <v-row justify="center">
            <v-col lg="4" class="text-center">
-            <v-toolbar-title>Vuetify App</v-toolbar-title>
-            <v-card-text>
+            <v-toolbar-title>Odkryj Polskę</v-toolbar-title>
+            <v-card-text class="">
+        <v-row justify="center" class="ml-3 mt-2">
+          <h3 class="h3_profile">Kuba</h3>
         <v-btn
-          v-for="icon in icons"
-          :key="icon"
           class="mx-4 black--text"
           icon
+          href="https://www.linkedin.com/in/jakub-rzepka/"
         >
           <v-icon size="24px">
-            {{ icon }}
+            mdi-linkedin  
           </v-icon>
         </v-btn>
+        </v-row>
+        <v-row justify="center" class="ml-3">
+          <h3 class="h3_profile">Kamila</h3>
+        <v-btn
+          class="mx-4 black--text"
+          icon
+          href="https://www.linkedin.com/in/kamila-talaj"
+        >
+          <v-icon size="24px">
+            mdi-linkedin
+          </v-icon>
+        </v-btn>
+        </v-row>
       </v-card-text>
-      <v-subheader>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</v-subheader>
+      <v-subheader>Zapisz się do Newsletter'a już teraz!</v-subheader>
       <v-form class="mt-4">
-        <v-text-field label="Email" outlined dense />
-        <v-btn rounded color="cyan">Subscribe us</v-btn>
+        <v-text-field label="Wpisz Email" outlined dense required />
+        <v-btn rounded class="white--text"  color="teal lighten-1">Zasubskrybuj</v-btn>
       </v-form>
            </v-col>
            
@@ -27,7 +41,7 @@
         <div class="mt-10">
             <v-divider></v-divider>
             <v-subheader>
-                Copyright Vuetify App. All Rights Reserverd {{ new Date().getFullYear() }} — <strong>Vuetify</strong> 
+                Strona stworzona przy pomocy Vue oraz Vuetify
             <v-spacer />
             <strong>Designed by Kuba & Kamila</strong>
             </v-subheader>
@@ -39,20 +53,12 @@
 <script>
 export default {
    name:"foo-ter",
-   data(){
-    return{
-        icons: [
-        'mdi-facebook',
-        'mdi-twitter',
-        'mdi-linkedin',
-        'mdi-instagram',
-      ],
-      }
-   }
 }
 </script>
 
 <style scoped>
-
+.h3_profile{
+  padding-top:7px;
+}
 
 </style>

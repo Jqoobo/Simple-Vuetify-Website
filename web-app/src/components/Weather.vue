@@ -1,4 +1,5 @@
 <template >
+
 <div id="weather" :class="typeof weather.main != 'undefined' && weather.main.temp > 16 ? 'warm' : ''">
     <main class="weather-main">
       <div class="search-box">

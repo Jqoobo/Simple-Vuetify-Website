@@ -1,5 +1,5 @@
 <template>
-    <v-container>
+    <v-container class="pt-15">
         <v-row>
             <v-col lg="6">
                 <img src="./../assets/car.jpg" alt="car">

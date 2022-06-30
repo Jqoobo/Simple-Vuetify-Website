@@ -1,18 +1,19 @@
 <template>
     <v-container class="pt-15">
         <v-row>
-            <v-col lg="6">
-               <h2 class="intro-text">Witamy w Odkryj Polskę! </h2>
-               <p class="opis">Na tej stronie poznasz największe i najlepsze niespodzianki, które możesz spotkać w Polsce!</p>
-               <v-btn color="cyan" class="white--text mr-10" rounded>Zacznij</v-btn>
-               <v-btn color="success" class="white--text" rounded href="https://www.youtube.com/watch?v=ekz6i58kVpI">
-               <v-icon>mdi-play-circle</v-icon>Zobacz wideo
+            <v-col lg="6" class="mt-15" >
+               <h2 class="intro-text text-left">Poznaj Polskę!</h2> <br><br>
+               <p class="opis d-none d-sm-flex d-sm-none d-md-flex">Nasza strona przedstawia najlepsze zakątki Polski oraz całe piekno Naszego kraju! Odkryj cuda tego kraju już teraz!<br><br>Polska, oficjalnie Rzeczpospolita Polska, jest demokratycznym państwem w Europie Środkowej. Stolicą i największym miastem kraju jest Warszawa. Polska, z powierzchnią 312 696 km² jest dziewiątym, co do wielkości krajem w Europie i zajmuje 69 miejsce wśród największych państw świata. Od północy Polska graniczy z Rosją i Litwą, od wschodu z Białorusią i Ukrainą, od południa ze Słowacją i Czechami, od zachodu z Niemcami. Geograficznie Polska jest krajem nizinnym. Katolicy są zdecydowanie największą religią w kraju.</p>
+               <v-btn color="teal lighten-1" class="white--text mr-10 mt-10" href="#/portfolio" rounded>Zacznij</v-btn>
+               <v-btn color="teal darken-3" class="white--text mt-10" rounded href="https://www.youtube.com/watch?v=ekz6i58kVpI">
+               <v-icon class="mr-3">mdi-play-circle</v-icon>Zobacz wideo
                </v-btn>
             </v-col>
             <v-col lg="6">
-                <img width="100%" src="./../assets/car.jpg"/>
+                <img width="100%" src="https://a.allegroimg.com/original/116527/c2a389954a7c8524835cad1eb9ab%22/%3E"/>
             </v-col>
         </v-row>
+        
     </v-container>
 </template>
 
@@ -28,18 +29,27 @@ export default{
 h2.intro-text{
     font-size:60px;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-right: 25%;
     color:#444
 }
 
 p.opis{
-
-    font-size: 19px;
-    font-family: sans-serif;
+    font-size: 21px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: justify;
     margin: 32 px 0px;
+    margin-right: 25%;
     color: #444444ba;
+}
+
+img{
+    height: 90%;
+    width:90%
 }
 
 
 
 </style>
+ 
