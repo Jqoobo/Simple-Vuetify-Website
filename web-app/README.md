@@ -36,7 +36,7 @@
   </a>
 </p>
 
-<h2 align="center">Vue + Vuetify</h2>
+<h2 align="center">Vue 2 + Vuetify</h2>
 
 ## Project setup
 ```
