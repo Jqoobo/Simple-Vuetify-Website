@@ -36,8 +36,8 @@
       sm="4"
     >
       <v-img src="https://polskazachwyca.pl/wp-content/uploads/2017/11/moszna-shutterstock_45201820-e1511825136853.jpg"
-      style="width: 500px; height:300px;"
-      class="ml-3 d-none d-sm-flex"
+      style="width: 500px; height:300px; margin-left:-15px"
+      class="d-none d-sm-flex"
       ></v-img>
     </v-col>
     <v-col

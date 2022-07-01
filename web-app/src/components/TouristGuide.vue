@@ -8,54 +8,54 @@
         </v-col>
         <v-col lg="12">
             <div class="justify-center mt-5 mb-10 d-none d-sm-flex ">
-                <v-chip @click="activePortfolio = 'webapp'" :color="activePortfolio === 'webapp'? 'teal lighten-1':''" class="mx-5 font-weight-bold ">Warszawa</v-chip>
-                <v-chip @click="activePortfolio = 'mobileapp'" :color="activePortfolio === 'mobileapp'? 'teal lighten-1':''" class="mx-5 font-weight-bold">Rzeszów</v-chip>
-                <v-chip @click="activePortfolio = 'desktopapp'" :color="activePortfolio === 'desktopapp'? 'teal lighten-1':''" class="mx-5 font-weight-bold">Kraków</v-chip>
+                <v-chip @click="activePrzewodnik = 'warszawa'" :color="activePrzewodnik === 'warszawa'? 'teal lighten-1':''" class="mx-5 font-weight-bold ">Warszawa</v-chip>
+                <v-chip @click="activePrzewodnik = 'rzeszow'" :color="activePrzewodnik === 'rzeszow'? 'teal lighten-1':''" class="mx-5 font-weight-bold">Rzeszów</v-chip>
+                <v-chip @click="activePrzewodnik = 'krakow'" :color="activePrzewodnik === 'krakow'? 'teal lighten-1':''" class="mx-5 font-weight-bold">Kraków</v-chip>
             </div>
             <div class="justify-center mt-5 mb-8 d-flex d-sm-none">
-                <v-chip @click="activePortfolio = 'webapp'" :color="activePortfolio === 'webapp'? 'teal lighten-1':''" class="mx-5 font-weight-bold ">Warszawa</v-chip>
-                <v-chip @click="activePortfolio = 'mobileapp'" :color="activePortfolio === 'mobileapp'? 'teal lighten-1':''" class="mx-5 font-weight-bold">Rzeszów</v-chip>
-                <v-chip @click="activePortfolio = 'desktopapp'" :color="activePortfolio === 'desktopapp'? 'teal lighten-1':''" class="mx-5 font-weight-bold">Kraków</v-chip>
+                <v-chip @click="activePrzewodnik = 'warszawa'" :color="activePrzewodnik === 'warszawa'? 'teal lighten-1':''" class="mx-5 font-weight-bold ">Warszawa</v-chip>
+                <v-chip @click="activePrzewodnik = 'rzeszow'" :color="activePrzewodnik === 'rzeszow'? 'teal lighten-1':''" class="mx-5 font-weight-bold">Rzeszów</v-chip>
+                <v-chip @click="activePrzewodnik = 'krakow'" :color="activePrzewodnik === 'krakow'? 'teal lighten-1':''" class="mx-5 font-weight-bold">Kraków</v-chip>
             </div>
         </v-col>
-        <slot v-if="activePortfolio === 'webapp'">
-        <v-col lg="3" v-for="(web,webindex) in webApps" :key="webindex">
+        <slot v-if="activePrzewodnik === 'warszawa'">
+        <v-col lg="3" v-for="(city1,city1index) in Warszawa" :key="city1index">
             <v-card>
                 <v-img
-                :src="web.image"
+                :src="city1.image"
                 class="white--text align-end"
                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                 height="200px"
                 >
-                <v-card-title>{{web.title}}</v-card-title>
+                <v-card-title>{{city1.title}}</v-card-title>
                 </v-img>
             </v-card>
         </v-col>
         </slot>
-        <slot v-if="activePortfolio === 'mobileapp'">
-        <v-col lg="3" v-for="(mobile,mobileindex) in mobileApps" :key="mobileindex">
+        <slot v-if="activePrzewodnik === 'rzeszow'">
+        <v-col lg="3" v-for="(city2,city2index) in Rzeszow" :key="city2index">
             <v-card>
                 <v-img
-                :src="mobile.image"
+                :src="city2.image"
                 class="white--text align-end"
                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                 height="200px"
                 >
-                <v-card-title>{{mobile.title}}</v-card-title>
+                <v-card-title>{{city2.title}}</v-card-title>
                 </v-img>
             </v-card>
         </v-col>
         </slot>
-        <slot v-if="activePortfolio === 'desktopapp'">
-        <v-col lg="3" v-for="(desktop,desktopindex) in desktopApps" :key="desktopindex">
+        <slot v-if="activePrzewodnik === 'krakow'">
+        <v-col lg="3" v-for="(city3,city3index) in Krakow" :key="city3index">
             <v-card>
                 <v-img
-                :src="desktop.image"
+                :src="city3.image"
                 class="white--text align-end"
                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                 height="200px"
                 >
-                <v-card-title>{{desktop.title}}</v-card-title>
+                <v-card-title>{{city3.title}}</v-card-title>
                 </v-img>
             </v-card>
         </v-col>
@@ -70,8 +70,8 @@
           name: "Port-folio",
           data(){
             return{
-                activePortfolio:'webapp',
-                webApps:[
+                activePrzewodnik:'warszawa',
+                Warszawa:[
                     {title:'Starówka', image:'https://warsawtour.pl/wp-content/uploads/2018/08/Zamkowy-Square_fot.-m.st_.-Warszawa_-PZ-Studio_Zbigniew-Panow.jpg'},
                     {title:'Łazienki', image:'https://upload.wikimedia.org/wikipedia/commons/f/fb/Pa%C5%82ac_na_wodzie_w_%C5%81azienkach_Kr%C3%B3lewskich_%28cropped%29.jpg'},
                     {title:'Pomnik', image:'https://d-art.ppstatic.pl/kadry/k/r/d1/88/5b30ffd58c575_o_full.jpg'},
@@ -81,7 +81,7 @@
 
                     
                 ],
-                mobileApps:[
+                Rzeszow:[
                     {title:'Pomnik Czynu Rew.', image:'https://nadzory-archeologiczne.pl/wp-content/uploads/2014/03/Rzesz%C3%B3w-1024x493.jpg'},
                     {title:'Kładka', image:'https://www.skanska.pl/globalassets/externalcontent2/project/okrga-kadka-dla-pieszych-w-rzeszowie/13f68a08-8715-4b28-a772-071396bcc9a4.1.jpg?height=524&width=932&scale=both&mode=crop&bgcolor='},
                     {title:'Rynek', image:'https://erzeszow.pl/static/img/k01/WPM/rynek/min1200/r1.jpg'},
@@ -89,7 +89,7 @@
                     {title:'Pałac Lubomirskich', image:'https://erzeszow.pl/static/img/k01/atrakcje/min1200/lubomirscy_zamek.jpg'},
                     {title:'Pałacyk Letni', image:'https://d-art.ppstatic.pl/kadry/k/r/25/b1/5e5e7034b327e_o_full.jpg'},
                 ],
-                desktopApps:[
+                Krakow:[
                     {title:'Starówka', image:'https://fajnepodroze.pl/wp-content/uploads/2019/04/stare-miasto-rynek-2_1.jpg'},
                     {title:'Smok Wawelski', image:'https://i.iplsc.com/-/000EDCLNCAHI58PU-C411.jpg'},
                     {title:'Kościół Mariacki', image:'https://polskazachwyca.pl/wp-content/uploads/2018/01/ko%C5%9Bci%C3%B3%C5%82-mariacki-krak%C3%B3w-shutterstock_667256869-e1516255860888.jpg'},
