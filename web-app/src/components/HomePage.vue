@@ -58,6 +58,5 @@ height: 90%;
     width:65%
 }
 
-
 </style>
  

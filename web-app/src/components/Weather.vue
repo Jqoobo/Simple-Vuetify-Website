@@ -1,8 +1,9 @@
 <template >
-
+<!--Warunek, który pozwoli wyświetlać inne tło dla temperatury powyżej 16 stopni, a inne dla temperatury poniżej 16 stopni-->
 <div id="weather" :class="typeof weather.main != 'undefined' && weather.main.temp > 16 ? 'warm' : ''">
     <main class="weather-main">
       <div class="search-box">
+        <!--Input, który pozwala wpisać nazwę Miasta (można także nazwę Państwa)-->
         <input 
           type="text" 
           class="search-bar d-none d-sm-flex" 
@@ -18,13 +19,13 @@
           @keypress="fetchWeather"
         />
       </div>
-
+      <!--Zwraca wpisanę nazwę Miasta (lub Państwa) oraz dzisiejszą datę-->
       <div class="weather-wrap" v-if="typeof weather.main != 'undefined'">
         <div class="location-box">
           <div class="location">{{ weather.name }}, {{ weather.sys.country }}</div>
           <div class="date">{{ dateBuilder() }}</div>
         </div>
-
+        <!--Zwraca temperaturę, która aktualnie jest w danym Mieście (lub Państwie)-->
         <div class="weather-box">
           <div class="temp">{{ Math.round(weather.main.temp) }}°c</div>
           <div class="weather">{{ weather.weather[0].main }}</div>
@@ -34,6 +35,7 @@
   </div>
 </template>
 
+<!--Scrypt Vue, który zawiera przede wszystkim klucz API potrzebny do pobierania pogody, ale takżę skrypty które pozwolą na pobieranie danych przy użyciu API. Pogoda pobierana jest z OpenWeather.-->
 <script>
 export default {
   name: 'app',
@@ -71,7 +73,10 @@ export default {
 }
 </script>
 
+<!--Style CSS + import czocionki-->
 <style scoped>
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 * {
   margin: 0;
@@ -79,7 +84,7 @@ export default {
   box-sizing: border-box;
 }
 body {
-  font-family: 'montserrat', sans-serif;
+  font-family: 'Segoe UI';
 }
 #weather{
 background: rgb(0,24,36);
@@ -89,7 +94,6 @@ transition: 0.3s;
 #weather.warm {
 background: rgb(0,24,36);
 background: linear-gradient(90deg, rgba(0,24,36,1) 0%, rgba(9,121,58,1) 35%, rgba(0,255,154,1) 100%);
-transition: 0.3s;
 }
 main {
   min-height: 42vh;
@@ -152,7 +156,7 @@ main {
   color: #FFF;
   font-size: 20px;
   font-weight: 300;
-  font-style: italic;
+  font-family: 'Segoe UI';
   text-align: center;
 }
 .weather-box {
@@ -170,11 +174,12 @@ main {
   margin: 30px 0px;
   box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
 }
+
 .weather-box .weather {
   color: #FFF;
   font-size: 48px;
   font-weight: 700;
-  font-style: italic;
+  font-family: 'Segoe UI';
   text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
 }
 </style>

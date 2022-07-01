@@ -1,3 +1,4 @@
+<!-- komponent - nie użyty -->
 <template>
     <v-app-bar 
       style="padding: 0px 90px"

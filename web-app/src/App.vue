@@ -15,9 +15,9 @@
     <v-toolbar-title class=" logo_title mx-2 mr-15 pr-15 d-flex d-sm-none">ODKRYWAJ.pl</v-toolbar-title>
     <v-spacer/>
     <v-list class="align-center d-none d-sm-flex d-sm-none d-md-flex">
-         <v-btn outlined color="black" class="mx-2" href="#/home">Home</v-btn>
-         <v-btn outlined color="black" class="mx-2" href="#/onas">O nas</v-btn>
-         <v-btn outlined color="black" class="mx-2" href="#/portfolio">Przewodnik</v-btn>
+         <v-btn outlined color="black" class="mx-2" href="#/homepage">Home</v-btn>
+         <v-btn outlined color="black" class="mx-2" href="#/aboutus">O nas</v-btn>
+         <v-btn outlined color="black" class="mx-2" href="#/touristguide">Przewodnik</v-btn>
          <v-btn outlined color="black" class="mx-2" href="#/gallery">Galeria</v-btn>
          <v-btn outlined color="black" class="mx-2" href="#/weather">Pogoda</v-btn>
       </v-list>
@@ -34,13 +34,13 @@
       </template>
       <v-list class="rensponsivMenu">
         <v-list-item>
-          <v-list-item-title><v-btn outlined color="black" class="mx-2" href="#/home">Home</v-btn></v-list-item-title>
+          <v-list-item-title><v-btn outlined color="black" class="mx-2" href="#/homepage">Home</v-btn></v-list-item-title>
           </v-list-item>
           <v-list-item>
-          <v-list-item-title><v-btn outlined color="black" class="mx-2" href="#/onas">O nas</v-btn></v-list-item-title>
+          <v-list-item-title><v-btn outlined color="black" class="mx-2" href="#/aboutus">O nas</v-btn></v-list-item-title>
           </v-list-item>
           <v-list-item>
-          <v-list-item-title><v-btn outlined color="black" class="mx-2" href="#/portfolio">Portfolio</v-btn></v-list-item-title>
+          <v-list-item-title><v-btn outlined color="black" class="mx-2" href="#/touristguide">Przewodnik</v-btn></v-list-item-title>
           </v-list-item>
           <v-list-item>
           <v-list-item-title><v-btn outlined color="black" class="mx-2" href="#/gallery">Galeria</v-btn></v-list-item-title>
@@ -54,6 +54,7 @@
     </v-app-bar>
     <v-main>
       <component :is="currentView" />
+      <Project/>
       <Contact/>
       <Footer/>
     </v-main>
@@ -62,20 +63,21 @@
 
 <script>
 
-import HeroComponent from './components/HeroComponent.vue'
+import HomePage from './components/HomePage.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
 import Header from './components/header.vue'
 import Weather from './components/Weather.vue'
-import Portfolio from './components/Portfolio.vue'
+import TouristGuide from './components/TouristGuide.vue'
 import Gallery from './components/Gallery.vue'
-import Onas from './components/Onas.vue'
+import AboutUs from './components/AboutUs.vue'
+import Project from './components/Hotels.vue'
 
 
 const routes = {
-  '/home': HeroComponent,
-  '/onas': Onas,
-  '/portfolio': Portfolio,
+  '/homepage': HomePage,
+  '/aboutus': AboutUs,
+  '/touristguide': TouristGuide,
   '/gallery': Gallery,
   '/weather': Weather
 }
@@ -83,7 +85,7 @@ const routes = {
 
 export default {
   name: 'App',
-  components: { HeroComponent, Contact, Footer, Header, Weather, Portfolio, Gallery, Onas },
+  components: { HomePage, Contact, Footer, Header, Weather, TouristGuide, Gallery, AboutUs, Project },
   
   data() {
     return {

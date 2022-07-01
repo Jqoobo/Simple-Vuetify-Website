@@ -66,7 +66,7 @@
 </template>
 
 <script>
-export default {
+       export default {
           name: "Port-folio",
           data(){
             return{
@@ -99,12 +99,7 @@ export default {
                 ]
             }
           }
-
 }
 </script>
 
-<style scoped>
-
-
-
-</style>
+<style scoped></style>

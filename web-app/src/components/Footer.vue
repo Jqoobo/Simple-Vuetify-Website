@@ -43,7 +43,7 @@
             <v-subheader>
                 Strona stworzona przy pomocy Vue oraz Vuetify
             <v-spacer />
-            <strong class="d-none d-sm-flex">Designed by Kuba & Kamila</strong>
+            <strong class="d-none d-sm-flex">Strona stworzona przez studentów: Kuba & Kamila</strong>
             </v-subheader>
            </div>
     </v-col>
@@ -65,6 +65,6 @@ export default {
 .logo_title{
 font-family: 'Segoe UI';
 font-weight: 800;
- }
+}
 
 </style>

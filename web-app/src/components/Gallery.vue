@@ -8,6 +8,7 @@
             <p class="text-center d-flex d-sm-none black--text">Trochę piękna z pozostałych części naszego pięknego kraju!</p>
         </v-col>
 
+         <!--Responsywność - Desktop-->
         <v-row class="mx-5 mt-10 ml-15 justify-center d-none d-sm-flex ">
     <v-col
       cols="6"
@@ -50,7 +51,7 @@
     </v-col>
   </v-row>
      
-
+    <!--Responsywność - Mobile-->
     <v-row class="mx-5 justify-center d-flex d-sm-none">
     <v-col
       cols="6"
@@ -103,7 +104,4 @@ export default {
 }
 </script>
 
-<style scoped>
-
-
-</style>
+<style scoped></style>
