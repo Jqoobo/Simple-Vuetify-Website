@@ -36,7 +36,7 @@
   </a>
 </p>
 
-<h2 align="center">Vue + Vuetify</h2>
+<h2 align="center">Vue 2 + Vuetify</h2>
 
 Vuetify is a MIT licensed project that is developed and maintained full-time by [John Leider](https://github.com/johnleider) and [Heather Leider](https://github.com/heatherleider); with support from the entire [Core Team](https://vuetifyjs.com/about/meet-the-team/). Sponsor Vuetify and receive some **awesome perks** and support Open Source Software at the same time! 🎉
 
